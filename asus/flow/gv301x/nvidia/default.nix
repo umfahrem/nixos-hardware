@@ -17,7 +17,7 @@ in {
 
   ];
 
-  # NVIDIA GeForce RTX 4070 Mobile
+  # NVIDIA GeForce RTX 3050 Ti Mobile
 
   boot = {
     blacklistedKernelModules = [ "nouveau" ];
@@ -39,8 +39,8 @@ in {
           enable = mkDefault true;
           enableOffloadCmd = mkDefault true;
         };
-        amdgpuBusId = "0@8:0:0";
-        nvidiaBusId = "1@1:0:0";
+        amdgpuBusId = "PCI:8:0:0";
+        nvidiaBusId = "PCI:1:0:0";
       };
 
       powerManagement = {
